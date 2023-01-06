@@ -1,38 +1,617 @@
-.App {
+@import url('https://fonts.cdnfonts.com/css/deysia-brush');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+
+body {
+  background-color: #B0B0B0;
+  overflow-x: hidden;
+}
+
+
+
+/* Navbar styling */
+.navbar {
+  font-family: 'Deysia Brush', sans-serif;
+  font-size: 30px;
+
+}
+
+.navbar-brand {
+  font-size: 40px;
+}
+
+.nav-item {
+  margin: 0px 20px;
+}
+
+/* Landing Page styling */
+
+.landPage {
+  height: 100vh;
+  width: 100%;
+  background-color: #B0B0B0;
+  display: flex;
+  font-family: 'Deysia Brush', sans-serif;
+}
+
+.leftProfile {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 100px;
+  flex-direction: column;
+}
+
+.leftProfile h1 {
+  font-size: 10rem;
+}
+
+.leftProfile span {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.leftProfile .lndButt {
+  padding: 8px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.rightProfile {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.rightProfile img {
+  height: 700px;
+}
+
+.sec2 {
+  height: 100vh;
+  width: 100%;
+  background-color: #B0B0B0;
+  display: flex;
+  font-family: 'Deysia Brush', sans-serif;
+}
+
+.leftProfile2 {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 80px;
+}
+
+.rightProfile2 {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.rightProfile2 h1 {
+  font-size: 90px;
+}
+
+.rightProfile2 p {
+  font-size: 18px;
+  width: 600px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.BmiButt {
+  padding: 8px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-size: 26px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.sec3 {
+  height: 100vh;
+  width: 100%;
+  background-color: #B0B0B0;
+  display: flex;
+  font-family: 'Deysia Brush', sans-serif;
+}
+
+.leftProfile3 {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 100px;
+  flex-direction: column;
+}
+
+.leftProfile3 h1 {
+  font-size: 90px;
+}
+
+.leftProfile3 p {
+  font-size: 18px;
+  width: 600px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.rightProfile3 {
+  height: 90vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.rightProfile3 img {
+  height: 600px;
+}
+
+
+.exerciseP {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #B0B0B0;
+}
+
+.exerciseP div h1 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.imgofex {
+  height: 200px;
+}
+
+.Searchex {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 50vh;
+  font-family: 'Deysia Brush', sans-serif;
+  background-color: #B0B0B0;
+}
+
+.Searchex h1 {
+  font-size: 90px;
+  margin-bottom: 30px;
+  font-family: 'Deysia Brush', sans-serif;
+}
+
+.Searchex p {
+  width: 80%;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+/* Footer styling */
+
+.thefooter {
+  height: 50px;
+  background-color: #B0B0B0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* LANDPAGE RESPONSIVE STYLING */
+
+@media (max-width: 1100px) {
+  .leftProfile {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 50px;
+    flex-direction: column;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.rightProfile{
+  display: none;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+.leftProfile2 img {
+  height: 600px;
+}
+.rightProfile img {
+  display: none;
+}
+.sec2 {
+  height: 140vh;
   flex-direction: column;
+}
+.rightProfile2 {
+  height: 90vh;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+}
+.leftProfile2 {
+  height: 90vh;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+}
+.sec3 {
+  height: 160vh;
+  width: 100%;
+  flex-direction: column;
+  background-color: #B0B0B0;
+  display: flex;
+  font-family: 'Deysia Brush', sans-serif;
+}
+.leftProfile3 {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.rightProfile3 {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.exerciseP {
+  height: 150vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #B0B0B0;
+}
+}
+@media (max-width:600px) {
+  .leftProfile h1 {
+    font-size: 5rem;
+  }
+  .leftProfile{
+    margin-left: 30px;
+  }
+  .leftProfile2 img {
+    height: 400px;
+  }
+  .leftProfile3 p {
+    font-size: 18px;
+    width: 345px;
+    font-family: 'Raleway', sans-serif;
+}
+.rightProfile2 p {
+  font-size: 18px;
+  width: 345px;
+  font-family: 'Raleway', sans-serif;
+}
+.rightProfile3 img {
+  height: 450px;
+}
+.rightProfile2 h1 {
+  font-size: 80px;
+}
+.Searchex {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Deysia Brush', sans-serif;
+  background-color: #B0B0B0;
+}
+  
+}
+@media (max-width:400px) {
+  .rightProfile2 h1 {
+    font-size: 80px;
+  }
+  .rightProfile2 p {
+    font-size: 15px;
+    width: 300px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .leftProfile2 {
+    height: 400px;
+    margin-left: 30px;
+  }
+  .leftProfile3 p {
+    font-size: 15px;
+    width: 306px;
+    font-family: 'Raleway', sans-serif;
+}
+.Searchex {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Deysia Brush', sans-serif;
+  background-color: #B0B0B0;
+}
+.thefooter h5{
+  font-size: 14px;
+}
+.leftProfile2 img {
+  height: 318px;
+}
+.Searchex h1 {
+  font-size: 63px;
+}
 }
 
-.App-link {
-  color: #61dafb;
+/* COMPONENT 2 - BMI styling */
+
+
+.BodyBMI {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.headBMI {
+  font-family: 'Deysia Brush', sans-serif;
+  font-size: 80px;
+}
+
+.formBMI {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formBMI p {
+  font-size: 16px;
+}
+
+.formBMI input {
+  height: 40px;
+  width: 500px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  padding: 0px 8px;
+}
+
+.buttsecBMI {
+  margin-top: 30px;
+}
+
+.butt {
+  margin: 0px 6px;
+  padding: 10px 20px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6d6d6d;
+  color: #fff;
+  box-shadow: 1px 1px 4px rgb(68, 68, 68);
+}
+
+.butt:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+}
+
+.results {
+  margin-top: 40px;
+}
+
+/* BMI PAGE RESPONSIVE STYLING */
+@media (max-width:600px){
+.results {
+  font-size: 14px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.formBMI input {
+  height: 40px;
+  width: 366px;
+  outline: none;
+  border: none;
+  border-radius: 12px;
+  padding: 0px 8px;
+}
+.headBMI {
+  font-family: 'Deysia Brush', sans-serif;
+  font-size: 60px;
+  margin: 20px;
+}
+.BodyBMI {
+  width: 100%;
+  height: 120vh;
+}
+}
+@media (max-width:400px){
+  .formBMI input {
+    height: 40px;
+    width: 306px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+
+/* Nutrition Page styling */
+
+.thehead {
+  font-family: 'Deysia Brush', sans-serif;
+  font-size: 80px;
+
+}
+
+.TheSearch {
+  height: 40px;
+  width: 500px;
+  border: 3px solid #000;
+  margin: 5px 10px;
+}
+
+.TheButton {
+  padding: 0px 20px;
+  font-size: 28px;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Deysia Brush', sans-serif;
+  cursor: pointer;
+
+}
+
+.App {
+  text-align: center;
+  /* width: 100vh; */
+  height: 100vh;
+  /* max-height: 600px; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+
+
+}
+
+.Body {
+  margin-top: 40px;
+  width: 600px;
+  height: 900px;
+  padding: 40px 40px;
+  background-color: #B0B0B0;
+  box-shadow: 4px 4px 7px #000;
+}
+
+.theTitle {
+  font-size: 30px;
+}
+
+.genre {
+  font-size: 20px;
+}
+
+.imggg {
+  border-radius: 12px;
+  max-width: 350px;
+}
+
+.body span {
+  margin-bottom: 30px;
+}
+
+.Body {
+  height: 400px;
+}
+
+.Body a {
+  text-decoration: none;
+  color: #000;
+  padding: 2px 8px;
+  border: 2px solid #000;
+  font-size: 30px;
+  margin: 60px;
+}
+
+.Body a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* NUTRITION RESPONSIVE PAGE */
+
+@media (max-width:450px){
+  .TheSearch {
+    height: 40px;
+    width: 290px;
+    border: 3px solid #000;
+    margin: 5px 10px;
+}
+.thehead {
+  font-family: 'Deysia Brush', sans-serif;
+  font-size: 60px;
+  margin-top: 30px;
+}
+.TheButton {
+  padding: 0px 20px;
+  font-size: 24px;
+}
+}
+
+
+/* OurBody Styling */
+
+.card {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 2px 2px 10px #7a7a7a;
+  
+
+
+}
+
+.imgl {
+  height: 20rem;
+  width: 20rem;
+
+}
+
+.card-title{
+  font-size: 38px;
+  font-family: 'Deysia Brush', sans-serif;
+
+}
+
+.card-text{
+  font-family: 'Raleway', sans-serif;
+}
+
+.ourBody{
+  font-size: 10rem;
+  font-family: 'Deysia Brush', sans-serif;
+}
+
+.ourBodyDetails{
+  font-size: 17px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+/* OUR BODY RESPONSIVE PAGE */
+@media (max-width:600px){
+  
+
+.imgl {
+    height: 10rem;
+    width: 10rem;
+}
 }
